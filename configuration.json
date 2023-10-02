@@ -1,0 +1,29 @@
+{
+  "airplane_name": "My Model Airplane",
+  "servos": [
+    {
+      "name": "Aileron Servo",
+      "type": "Standard Servo",
+      "position": "Wing"
+    },
+    {
+      "name": "Elevator Servo",
+      "type": "Digital Servo",
+      "position": "Tail"
+    }
+  ],
+  "escs": [
+    {
+      "name": "Main ESC",
+      "type": "Brushless ESC",
+      "max_current": 30
+    }
+  ],
+  "motors": [
+    {
+      "name": "Propulsion Motor",
+      "type": "Brushless Motor",
+      "kv_rating": 1000
+    }
+  ]
+}
