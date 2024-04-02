@@ -1,5 +1,6 @@
 {
-  "airplane_name": "My Model Airplane",
+  "airplane_name": "NIMBUS",
+  "fuselage_model": "MFD Crosswind Nimbus Pro 1900mm FPV Plane",
   "servos": [
     {
       "name": "Aileron Servo",
@@ -10,6 +11,11 @@
       "name": "Elevator Servo",
       "type": "Digital Servo",
       "position": "Tail"
+    },
+    {
+      "name": "Rudder Servo",
+      "type": "Digital Servo",
+      "position": "Rudder"
     }
   ],
   "escs": [
