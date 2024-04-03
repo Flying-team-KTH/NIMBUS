@@ -1,35 +1,80 @@
 {
   "airplane_name": "NIMBUS",
   "fuselage_model": "MFD Crosswind Nimbus Pro 1900mm FPV Plane",
+  "flight_controller": "Cube Orange+",
+  "gps": "Here3+ CAN GNSS",
+  "telemetry": "RFD868x-EU",
+  "radio": "FrSKY X8R",
+  "rangefinder": "Benewake TFMINI Plus Micro LIDAR Module",
+  "airspeed_sendor": "Digital Airspeed Sensor Kit for PX4",
+  "dc-dc_converter": "LM2596",
   "servos": [
     {
-      "name": "Aileron Servo",
-      "type": "Standard Servo",
-      "position": "Wing"
+      "name": "Right Aileron Servo",
+      "type": "Digital Servo",
+      "model": "HK15148B",
+      "position": "Right Wing"
+    },
+    {
+      "name": "Left Aileron Servo",
+      "type": "Digital Servo",
+      "model": "HK15148B",
+      "position": "Left Wing"
     },
     {
       "name": "Elevator Servo",
       "type": "Digital Servo",
+      "model": "HVS-346BB",
       "position": "Tail"
     },
     {
       "name": "Rudder Servo",
-      "type": "Digital Servo",
+      "type": "Analog Servo",
+      "model": "TGY-50090W",
       "position": "Rudder"
     }
   ],
   "escs": [
     {
-      "name": "Main ESC",
+      "name": "Right ESC",
       "type": "Brushless ESC",
-      "max_current": 30
+      "model": "T-Motor F45A 3-6S BLHeli_32",
+      "position": "Right Wing",
+      "max_current": 45
+    },
+    {
+      "name": "Left ESC",
+      "type": "Brushless ESC",
+      "model": "T-Motor F45A 3-6S BLHeli_32",
+      "position": "Left Wing",
+      "max_current": 45
     }
   ],
   "motors": [
     {
-      "name": "Propulsion Motor",
+      "name": "Right Motor",
       "type": "Brushless Motor",
-      "kv_rating": 1000
+      "model": "Turnigy Aerodrive SK3 - 4240-740KV",
+      "position": "Right Wing",
+      "kv_rating": 740
+    },
+    {
+      "name": "Left Motor",
+      "type": "Brushless Motor",
+      "model": "Turnigy Aerodrive SK3 - 4240-740KV",
+      "position": "Left Wing",
+      "kv_rating": 740
+    }
+  ],
+  "batteries": [
+    {
+      "name": "Main Battery",
+      "type": "LiPo",
+      "model": "Vapex Li-Po Batteri 5S 25C",
+      "acquired": "N/A",
+      "capacity": 4000,
+      "voltage": 18.5,
+      "quantity": 2
     }
   ]
 }
