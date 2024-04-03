@@ -7,12 +7,15 @@ This is a repo for the NIMBUS-aircraft. It should contain most of the informatio
 ### Ground station
 In order to work at any with the Ardupilot aircraft, you need a ground station application. It is higly recommended to use [Mission Planner](https://ardupilot.org/planner/index.html)[^2]. There are others, but they are not as fully equiped and have not been tested in the KTH Flying Team. It is only available for Windows. MacOS users are recommended to either get ahold of a Win-PC for the project, use the one available to the Flying Team or use Bootcamp. Should you have a M-series Mac, you could consider an emulator such as [Parallels Desktop](https://www.parallels.com/)[^3].
 
-### CAD-files
-All models have been made using Autodesk Fusion360 (education licence provided for free). Files are saved here in `.m3f` format and should be updated as such. 3D-printable files in their latest version should be made available as `.stl` files.
+### [CAD-files](3D-files)
+All models have been made using Autodesk Fusion360 (education licence provided for free). Files are saved here in `.m3f` format and should be updated as such. 3D-printable files in their latest version should be made available as `.stl` files. See folder `3D-files`
 
 ## Other information
 
-### Parameter-files
+### [*configuration.json*](configuration.json)
+This file contains the latest config of the aircraft, with model numbers and such information that any part should be able to be changed without taking apart the plane. It is a `.json` file and shoud be formatted as such (not very difficult). If anyone knows of a good way to display it (maybe as a tree structure), please feel free to implement it. 
+
+### [Parameter-file](NIMBUS.param)
 It would be great if the latest parameters for the aricraft could be available to everyone on the Flying Team via this repo. If you are unsure about parameters, see [this website](https://ardupilot.org/planner/docs/mission-planner-configuration-and-tuning.html) and learn how to save and import parameters. If you have made an update to the parameters of the aircraft and verified that it does what you wanted, please save the parameters to a file and update the repo. Your commit should contain information on what has been changed. This is important for rollback!
 
 
